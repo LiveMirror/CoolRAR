@@ -1,0 +1,13 @@
+#include "ComboDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 140
+#define yc 18
+IDD_DIALOG_COMBO  MY_RESIZE_DIALOG
+CAPTION "Combo"
+{
+  LTEXT      "", IDC_COMBO_STATIC, m, m-4, xc, 10
+  COMBOBOX       IDC_COMBO_COMBO,  m, 16, 100, 10, MY_COMBO_WITH_EDIT
+  OK_CANCEL
+}
+

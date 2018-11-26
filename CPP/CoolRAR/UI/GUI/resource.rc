@@ -1,0 +1,21 @@
+#include "../../MyVersionInfo.rc"
+#include <winnt.h>
+
+#include "resource2.rc"
+#include "../FileManager/resourceGui.rc"
+
+MY_VERSION_INFO_APP("CoolRAR GUI", "CoolRAR GUI")
+
+IDI_ICON ICON "FM.ico"
+
+#ifndef UNDER_CE
+1 24 MOVEABLE PURE "CoolRARGui.exe.manifest"
+#endif
+
+#ifdef UNDER_CE
+#include "../FileManager/PropertyName.rc"
+#endif
+#include "../FileManager/OverwriteDialog.rc"
+#include "../FileManager/PasswordDialog.rc"
+#include "../FileManager/ProgressDialog2.rc"
+#include "Extract.rc"

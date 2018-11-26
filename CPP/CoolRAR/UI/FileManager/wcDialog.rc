@@ -1,0 +1,28 @@
+#include "wcDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 340
+#define yc 172
+
+IDD_DIALOG_WC MY_DIALOG
+CAPTION "向导选择操作"
+BEGIN
+  LTEXT      "请选择你要进行的操作并单击下一步按钮。", IDC_TEXT1_STATIC_WC, m+60, m, xc, 8
+  LTEXT      "例如您要解压文件请选择解压缩",           IDC_TEXT2_STATIC_WC, m+60, m+8, xc, 8
+  LTEXT      "请选择压缩文件并点击下一步",             IDC_TEXT3_STATIC_WC, m+60, m, xc, 8,NOT WS_VISIBLE
+  LTEXT     "或者浏览文件夹手动查找压缩文件",          IDC_TEXT4_STATIC_WC, m+60, m+8, xc, 8,NOT WS_VISIBLE
+  LTEXT     "请输入压缩名来创建新的压缩文件",          IDC_TEXT5_STATIC_WC, m+60, m+8, xc, 8,NOT WS_VISIBLE
+  LTEXT     "请选择压缩文件并按下一步按钮",            IDC_TEXT6_STATIC_WC, m+60, m+8, xc, 8,NOT WS_VISIBLE 
+  CONTROL         IDB_GUIDER,                          IDC_BITMAP_STATIC,"Static",SS_BITMAP,m,m,48,36
+  COMBOBOX                                             IDC_COMBO_REALEASE, xs -350, 80, 250, bys,MY_COMBO_WITH_EDIT
+  COMBOBOX                                             IDC_COMBO_PRESSNAME, xs -350, 80, 250, bys,MY_COMBO_WITH_EDIT
+  CONTROL  "解压一个压缩文件(&U)", IDC_WC_REALEASE, MY_CHOOSEBOX, 100, 80, xc, 10
+  CONTROL  "创建新的压缩文件(&C)", IDC_WC_NEWREALEASE, MY_CHOOSEBOX, 100, 90, xc, 10
+  //CONTROL  "把文件添加到已存在的压缩文件中", IDC_WC_ADDREALEASE, MY_CHOOSEBOX, 100, 100, xc, 10
+  PUSHBUTTON     "浏览(&B).. ",IDC_BUTTON_SEARCH,bx1-20,by-100,bxs, bys-4,NOT WS_VISIBLE             
+  DEFPUSHBUTTON  "下一步(&N) >", IDC_BUTTON_NEXT,bx1-130, by, bxs-4, bys-3
+  DEFPUSHBUTTON  "< 上一步(&B)", IDC_BUTTON_FRONT, bx1-190, by, bxs-4, bys-3
+  DEFPUSHBUTTON  "取消", IDOK,bx1-60, by, bxs-4, bys-3
+  DEFPUSHBUTTON  "帮助", IDC_BUTTON_HELP,bx1+10, by, bxs-4, bys-3
+  
+END

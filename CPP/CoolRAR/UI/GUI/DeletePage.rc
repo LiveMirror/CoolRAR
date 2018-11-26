@@ -1,0 +1,52 @@
+#include "DeletePageRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 240
+#define yc 150
+
+IDD_PAGE_DELETE MY_PAGE
+CAPTION "选项"
+BEGIN	 
+
+		
+	GROUPBOX "压缩算法",  IDC_DET_PAGE_GROUP_YSSF,m,m,xc-2, 100
+
+	LTEXT      "压缩方法", IDC_DET_PAGE_TEXT_ONE, m+5, m + 15-1, 50, 8
+	COMBOBOX			   IDC_DET_PAGE_COMBO_ONE,m+55,m +14-1, 60, 10, MY_COMBO_WITH_EDIT
+
+	LTEXT      "线程个数", IDC_DET_PAGE_TEXT_SIX, m+5,m+33-1, 50, 8
+	COMBOBOX				IDC_DET_PAGE_COMBO_SIX,m+55,m +32-1, 60, 10, MY_COMBO_WITH_EDIT
+ 
+	LTEXT      "字典大小", IDC_DET_PAGE_TEXT_THREE,m+5,m+51-1, 50, 8
+	COMBOBOX			   IDC_DET_PAGE_COMBO_THREE,m+55,m +50-1, 60, 10, MY_COMBO_WITH_EDIT
+
+
+	LTEXT      "单词大小", IDC_DET_PAGE_TEXT_FOUR,m+5,m+69-1, 50, 8
+	COMBOBOX			   IDC_DET_PAGE_COMBO_FOUR,m+55,m +68-1,60, 10, MY_COMBO_WITH_EDIT
+
+	LTEXT      "固实大小", IDC_DET_PAGE_TEXT_FIVE,m+5,m+87-1, 50, 8
+	COMBOBOX			   IDC_DET_PAGE_COMBO_FIVE,m+55,m +86-1, 60, 10, MY_COMBO_WITH_EDIT
+
+// 	LTEXT      "线程个数", IDC_DET_PAGE_TEXT_SIX, m+125, m + 15-1, 50, 8
+// 	COMBOBOX			   IDC_DET_PAGE_COMBO_SIX,m+175,m +14-1, 40, 10, MY_COMBO_WITH_EDIT
+
+	
+	LTEXT      "压缩所需内存：", IDC_DET_PAGE_TEXT_SEVEN, m+125, m + 50, 60, 8
+
+	LTEXT      "", IDC_DET_PAGE_TEXT_EIGHT, m+190, m + 50, 40, 8
+
+	
+	LTEXT      "解压所需内存：", IDC_DET_PAGE_TEXT_NINE, m+125, m + 70,60, 8
+
+	LTEXT      "", IDC_DET_PAGE_TEXT_TEN, m+190, m + 70, 40, 8
+
+
+
+	GROUPBOX "删除模式",                 IDC_DET_PAGE_GROUP_PRESSSTYLE,m, m+105 , xc-2, 50
+	CONTROL  "删除文件(&D)",             IDC_DET_PAGE_BOX_PRESSSTYLE_ONE ,MY_CHOOSEBOXONE, m+5, m +115, 60, 10
+	CONTROL  "移动文件到回收站(&R)",     IDC_DET_PAGE_BOX_PRESSSTYLE_TWO ,MY_CHOOSEBOXONE, m+5, m + 127, 90, 10
+    CONTROL  "清除文件(&W)",             IDC_DET_PAGE_BOX_PRESSSTYLE_THREE ,MY_CHOOSEBOXONE, m+5, m + 139, 60, 10
+
+	
+
+END

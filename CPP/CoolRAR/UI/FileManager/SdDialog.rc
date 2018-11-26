@@ -1,0 +1,33 @@
+#include "SdDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 185
+#define yc 110
+
+IDD_DIALOG_SD MY_DIALOG
+CAPTION "扫描文件内病毒"
+BEGIN
+	LTEXT      "CoolRAR 找到的病毒扫描软件(&S)", IDC_SD_TEXT_FILE, m, m, 183, 8
+	COMBOBOX               IDC_SD_COMBO_FILE, m, m + 12, 183, 50, MY_COMBO_WITH_EDIT
+
+
+	LTEXT     "病毒扫描软件名(&N)", IDC_SD_TEXT_ONE, m, m+36, 183, 8
+	PUSHBUTTON  "浏览(&B)..",    IDC_SD_BUTTON_SEARCH,140, m+35, 50, 14	
+
+	EDITTEXT            IDC_SDE_EDITTEXT_ONE,  m, m + 50, 183, 14
+
+	LTEXT     "病毒扫描软件参数(&P)", IDC_SD_TEXT_TWO, m, m+68, 183, 8
+
+	EDITTEXT            IDC_SDE_EDITTEXT_TWO,  m, m + 80, 183, 14
+
+	PUSHBUTTON  "确定",    IDC_SD_BUTTON_ONE, m+10, m + 100, 50, 14
+
+	PUSHBUTTON  "取消",    IDC_SD_BUTTON_TWO, m+69, m + 100, 50, 14
+
+	PUSHBUTTON  "帮助",    IDC_SD_BUTTON_HELP, m+128, m + 100, 50, 14
+
+
+
+
+
+END

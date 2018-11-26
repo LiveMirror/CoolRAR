@@ -1,0 +1,20 @@
+#include "CommentsPageRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 240
+#define yc 150
+
+IDD_PAGE_COMMENTS MY_PAGE
+CAPTION "注释"
+BEGIN
+          LTEXT    "从文件中加载注释(&F)",     IDC_TEXT1_PAGE_COMMENTS, m+6,  m, xc-50, 15
+          PUSHBUTTON    "浏览(&B)...",         IDC_BUTTON1_PAGE_COMMENTS, xc-48, m, 48,15
+          COMBOBOX                             IDC_COMBO1_PAGE_COMMENTS, m+6, m+20, xc-10,15,MY_COMBO_WITH_EDIT
+          LTEXT    "手动输入注释内容(&C)"      IDC_TEXT2_PAGE_COMMENTS, m+6, m+39, xc-50,15
+          EDITTEXT                             IDC_EDIT_PAGE_COMMENTS, m+6, m+55, xc-10,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+//           PUSHBUTTON    "确定",                IDC_BUTTON2_PAGE_COMMENTS,xc-154 , m+160, 48,15
+//           PUSHBUTTON    "取消",                IDC_BUTTON3_PAGE_COMMENTS, xc-100, m+160, 48,15
+//           PUSHBUTTON    "帮助",                IDC_BUTTON4_PAGE_COMMENTS, xc-46, m+160,48,15
+END
+
+

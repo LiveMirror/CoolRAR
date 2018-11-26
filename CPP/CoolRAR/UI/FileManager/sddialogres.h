@@ -1,0 +1,12 @@
+#define IDD_DIALOG_SD          614
+#define IDC_SD_TEXT_FILE		1001
+#define IDC_SD_COMBO_FILE		1002
+#define IDC_SD_BUTTON_SEARCH	1003
+#define IDC_SD_TEXT_ONE			1004	
+#define IDC_SDE_EDITTEXT_ONE    1005
+#define IDC_SD_TEXT_TWO         1006
+#define IDC_SDE_EDITTEXT_TWO    1007
+
+#define IDC_SD_BUTTON_ONE		1008
+#define IDC_SD_BUTTON_TWO       1009
+#define IDC_SD_BUTTON_HELP      1010

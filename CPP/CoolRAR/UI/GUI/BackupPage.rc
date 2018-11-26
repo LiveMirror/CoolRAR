@@ -1,0 +1,19 @@
+#include "BackupPageRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 240
+#define yc 150
+
+IDD_PAGE_BACKUP MY_PAGE
+CAPTION "备份"
+BEGIN
+       GROUPBOX    "备份选项"      IDC_BACKUP_PAGE_GROUP_EDIT, m, m, xc-m, 100
+       CONTROL  "压缩前清除目标磁盘内容(&E)",          IDC_BACKUP_PAGE_BOX_EDIT_ONE,MY_CHECKBOX, m+6, m+10,110,10
+       CONTROL  "只添加具有“存档”属性的文件(&O)",    IDC_BACKUP_PAGE_BOX_EDIT_TWO,MY_CHECKBOX, m+6, m+22,110,10
+       CONTROL  "压缩后清除“存档”属性(&I)",          IDC_BACKUP_PAGE_BOX_EDIT_THREE,MY_CHECKBOX, m+6, m+34,110,10
+       CONTROL  "打开共享文件(&S)",                    IDC_BACKUP_PAGE_BOX_EDIT_FOUR,MY_CHECKBOX, m+6, m+46,110,10
+       CONTROL  "按掩码产生压缩文件名(&G)",            IDC_BACKUP_PAGE_BOX_EDIT_FIVE,MY_CHECKBOX, m+6, m+58,110,10
+       CONTROL  "保留以前版本的文件(&V)",              IDC_BACKUP_PAGE_BOX_EDIT_SIX,MY_CHECKBOX, m+6, m+70,110,10
+       EDITTEXT  IDC_BACKUP_PAGE_EDIT_ONE, m+110, m+58, 80, 10,
+END
+

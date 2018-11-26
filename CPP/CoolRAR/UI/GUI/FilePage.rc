@@ -1,0 +1,21 @@
+#include "FilePageRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 240
+#define yc 150
+
+IDD_PAGE_FILE MY_PAGE
+CAPTION "文件"
+BEGIN
+	
+	GROUPBOX "文件路径",  IDC_FILE_PAGE_GROUP_EDIT,m + 2,m + 5,xc-4, yc-10
+	
+	CONTROL  "存储相对路径(&L)",     IDC_FILE_PAGE_BOX_EDIT_ONE,MY_CHOOSEBOXONE,m +12, m+25,130,10
+	CONTROL  "存储绝对路径(&E)",  IDC_FILE_PAGE_BOX_EDIT_TWO,MY_CHOOSEBOXONE,m +12, m+45,130,10
+	CONTROL  "不存储路径(&S)",        IDC_FILE_PAGE_BOX_EDIT_THREE,MY_CHOOSEBOXONE,m +12, m+65,130,10
+	CONTROL  "存储包过盘符的完全路径路径(&S)", IDC_FILE_PAGE_BOX_EDIT_FOUR,MY_CHOOSEBOXONE,m +12, m+85,130,10
+   
+
+	
+END
+

@@ -1,0 +1,786 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CoolRARGui - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/resource.res" /d "_DEBUG" "F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\UI\GUI\resource.rc"" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP1FB.tmp" with contents
+[
+/nologo /Gz /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\\" /D "_DEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /D "LANG" /D "WIN_LONG_PATH" /D "EXTERNAL_CODECS" /D "SUPPORT_DEVICE_FILE" /FR"Debug/" /Fp"Debug/CoolRARGui.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\UI\Common\OpenArchive.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP1FB.tmp" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP1FC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib htmlhelp.lib dbghelp.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CoolRARGui.pdb" /debug /machine:I386 /out:"..\..\..\..\Debug\CoolRARGui.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\ArchiveCommandLine.obj"
+".\Debug\ArchiveExtractCallback.obj"
+".\Debug\ArchiveOpenCallback.obj"
+".\Debug\Bench.obj"
+".\Debug\DefaultName.obj"
+".\Debug\EnumDirItems.obj"
+".\Debug\Extract.obj"
+".\Debug\ExtractingFilePath.obj"
+".\Debug\LoadCodecs.obj"
+".\Debug\OpenArchive.obj"
+".\Debug\PropIDUtils.obj"
+".\Debug\SetProperties.obj"
+".\Debug\SortUtils.obj"
+".\Debug\TempFiles.obj"
+".\Debug\Update.obj"
+".\Debug\UpdateAction.obj"
+".\Debug\UpdateCallback.obj"
+".\Debug\UpdatePair.obj"
+".\Debug\UpdateProduce.obj"
+".\Debug\WorkDir.obj"
+".\Debug\ZipRegistry.obj"
+".\Debug\MyMessages.obj"
+".\Debug\AdvancedPage.obj"
+".\Debug\CommentsPage.obj"
+".\Debug\ConventionalPage.obj"
+".\Debug\DeletePage.obj"
+".\Debug\FilePage.obj"
+".\Debug\GeneralPage.obj"
+".\Debug\OptionsDlg.obj"
+".\Debug\SeniorPage.obj"
+".\Debug\TimePage.obj"
+".\Debug\BenchmarkDialog.obj"
+".\Debug\OverwriteDialog.obj"
+".\Debug\PasswordDialog.obj"
+".\Debug\ProgressDialog2.obj"
+".\Debug\ExtractCallback.obj"
+".\Debug\FormatUtils.obj"
+".\Debug\HelpUtils.obj"
+".\Debug\LangUtils.obj"
+".\Debug\OpenCallback.obj"
+".\Debug\ProgramLocation.obj"
+".\Debug\RegistryUtils.obj"
+".\Debug\SplitUtils.obj"
+".\Debug\StringUtils.obj"
+".\Debug\ExtractGUI.obj"
+".\Debug\GUI.obj"
+".\Debug\UpdateCallbackGUI.obj"
+".\Debug\UpdateGUI.obj"
+".\Debug\CreateCoder.obj"
+".\Debug\FilePathAutoRename.obj"
+".\Debug\FileStreams.obj"
+".\Debug\FilterCoder.obj"
+".\Debug\ProgressUtils.obj"
+".\Debug\StreamUtils.obj"
+".\Debug\CopyCoder.obj"
+".\Debug\7zCrc.obj"
+".\Debug\7zCrcOpt.obj"
+".\Debug\Alloc.obj"
+".\Debug\CpuArch.obj"
+".\Debug\Threads.obj"
+".\Debug\CommandLineParser.obj"
+".\Debug\CRC.obj"
+".\Debug\IntToString.obj"
+".\Debug\Lang.obj"
+".\Debug\ListFileUtils.obj"
+".\Debug\MyString.obj"
+".\Debug\MyVector.obj"
+".\Debug\NewHandler.obj"
+".\Debug\StringConvert.obj"
+".\Debug\StringToInt.obj"
+".\Debug\TextConfig.obj"
+".\Debug\UTFConvert.obj"
+".\Debug\Wildcard.obj"
+".\Debug\ComboBox.obj"
+".\Debug\Dialog.obj"
+".\Debug\ListView.obj"
+".\Debug\optionPage.obj"
+".\Debug\TreeView.obj"
+".\Debug\CommonDialog.obj"
+".\Debug\DLL.obj"
+".\Debug\Error.obj"
+".\Debug\FileDir.obj"
+".\Debug\FileFind.obj"
+".\Debug\FileIO.obj"
+".\Debug\FileName.obj"
+".\Debug\FileSystem.obj"
+".\Debug\MemoryLock.obj"
+".\Debug\PropVariant.obj"
+".\Debug\PropVariantConversions.obj"
+".\Debug\Registry.obj"
+".\Debug\ResourceString.obj"
+".\Debug\Shell.obj"
+".\Debug\Synchronization.obj"
+".\Debug\System.obj"
+".\Debug\Time.obj"
+".\Debug\Window.obj"
+".\Debug\OutStreamWithCRC.obj"
+".\Debug\ExceptionHandler.obj"
+".\Debug\GetWinVer.obj"
+".\Debug\MiniVersion.obj"
+".\Debug\RootFolderTree.obj"
+".\Debug\SysIconUtils.obj"
+".\Debug\HttpUpdat.obj"
+".\Debug\resource.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP1FC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+OpenArchive.cpp
+Linking...
+LINK : LNK6004: ..\..\..\..\Debug\CoolRARGui.exe not found or not built by the last incremental link; performing full link
+LIBCMTD.lib(onexit.obj) : warning LNK4078: multiple ".CRT" sections found with different attributes (C0300040)
+MSVCRTD.lib(MSVCRTD.dll) : error LNK2005: _memmove already defined in LIBCMTD.lib(memmove.obj)
+LINK : warning LNK4098: defaultlib "MSVCRTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+MiniVersion.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+RootFolderTree.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+SysIconUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+HttpUpdat.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Window.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+OutStreamWithCRC.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ExceptionHandler.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+GetWinVer.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ResourceString.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Shell.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+System.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Time.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+MemoryLock.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+PropVariant.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+PropVariantConversions.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Registry.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileFind.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileIO.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileName.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileSystem.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CommonDialog.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+DLL.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Error.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileDir.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Dialog.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ListView.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+optionPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+TreeView.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+TextConfig.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UTFConvert.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Wildcard.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ComboBox.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+MyVector.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+NewHandler.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+StringConvert.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+StringToInt.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+IntToString.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Lang.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ListFileUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+MyString.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CpuArch.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Threads.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CommandLineParser.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CRC.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CopyCoder.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+7zCrc.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+7zCrcOpt.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Alloc.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FileStreams.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FilterCoder.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ProgressUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+StreamUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UpdateGUI.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CreateCoder.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+SplitUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+StringUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ExtractGUI.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+GUI.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+LangUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+OpenCallback.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ProgramLocation.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+RegistryUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ProgressDialog2.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FormatUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+HelpUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+TimePage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+OverwriteDialog.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+PasswordDialog.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+FilePage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+GeneralPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+OptionsDlg.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+SeniorPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+AdvancedPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+CommentsPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ConventionalPage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+DeletePage.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UpdateProduce.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+WorkDir.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ZipRegistry.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+MyMessages.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+TempFiles.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Update.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UpdateCallback.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+UpdatePair.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+LoadCodecs.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+PropIDUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+SetProperties.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+SortUtils.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+DefaultName.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+EnumDirItems.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Extract.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+Bench.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+MiniVersion.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+RootFolderTree.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+SysIconUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+HttpUpdat.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Window.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+OutStreamWithCRC.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ExceptionHandler.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+GetWinVer.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ResourceString.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Shell.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+System.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Time.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+MemoryLock.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+PropVariant.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+PropVariantConversions.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Registry.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileFind.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileIO.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileName.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileSystem.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CommonDialog.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+DLL.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Error.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileDir.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Dialog.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ListView.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+optionPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+TreeView.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+TextConfig.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UTFConvert.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Wildcard.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ComboBox.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+MyVector.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+NewHandler.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+StringConvert.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+StringToInt.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+IntToString.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Lang.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ListFileUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+MyString.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CpuArch.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Threads.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CommandLineParser.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CRC.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CopyCoder.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+7zCrc.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+7zCrcOpt.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Alloc.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FileStreams.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FilterCoder.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ProgressUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+StreamUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UpdateGUI.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CreateCoder.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+SplitUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+StringUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ExtractGUI.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+GUI.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+LangUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+OpenCallback.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ProgramLocation.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+RegistryUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ProgressDialog2.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FormatUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+HelpUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+TimePage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+OverwriteDialog.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+PasswordDialog.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+FilePage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+GeneralPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+OptionsDlg.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+SeniorPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+AdvancedPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+CommentsPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ConventionalPage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+DeletePage.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UpdateProduce.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+WorkDir.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ZipRegistry.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+MyMessages.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+TempFiles.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Update.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UpdateCallback.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+UpdatePair.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+LoadCodecs.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+PropIDUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+SetProperties.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+SortUtils.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+DefaultName.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+EnumDirItems.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Extract.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+Bench.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+MiniVersion.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+RootFolderTree.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+SysIconUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+HttpUpdat.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Window.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+OutStreamWithCRC.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ExceptionHandler.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+GetWinVer.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ResourceString.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Shell.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+System.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Time.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+MemoryLock.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+PropVariant.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+PropVariantConversions.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Registry.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileFind.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileIO.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileName.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileSystem.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CommonDialog.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+DLL.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Error.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileDir.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Dialog.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ListView.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+optionPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+TreeView.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+TextConfig.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UTFConvert.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Wildcard.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ComboBox.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+MyVector.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+NewHandler.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+StringConvert.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+StringToInt.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+IntToString.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Lang.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ListFileUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+MyString.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CpuArch.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Threads.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CommandLineParser.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CRC.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CopyCoder.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+7zCrc.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+7zCrcOpt.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Alloc.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FileStreams.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FilterCoder.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ProgressUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+StreamUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UpdateGUI.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CreateCoder.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+SplitUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+StringUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ExtractGUI.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+GUI.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+LangUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+OpenCallback.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ProgramLocation.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+RegistryUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ProgressDialog2.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FormatUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+HelpUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+TimePage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+OverwriteDialog.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+PasswordDialog.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+FilePage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+GeneralPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+OptionsDlg.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+SeniorPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+AdvancedPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+CommentsPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ConventionalPage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+DeletePage.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UpdateProduce.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+WorkDir.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ZipRegistry.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+MyMessages.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+TempFiles.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Update.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UpdateCallback.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+UpdatePair.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+LoadCodecs.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+PropIDUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+SetProperties.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+SortUtils.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+DefaultName.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+EnumDirItems.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Extract.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+Bench.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol ___iob_func
+MiniVersion.obj : error LNK2001: unresolved external symbol ___security_cookie
+RootFolderTree.obj : error LNK2001: unresolved external symbol ___security_cookie
+SysIconUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+HttpUpdat.obj : error LNK2001: unresolved external symbol ___security_cookie
+Time.obj : error LNK2001: unresolved external symbol ___security_cookie
+Window.obj : error LNK2001: unresolved external symbol ___security_cookie
+ExceptionHandler.obj : error LNK2001: unresolved external symbol ___security_cookie
+GetWinVer.obj : error LNK2001: unresolved external symbol ___security_cookie
+PropVariantConversions.obj : error LNK2001: unresolved external symbol ___security_cookie
+Registry.obj : error LNK2001: unresolved external symbol ___security_cookie
+ResourceString.obj : error LNK2001: unresolved external symbol ___security_cookie
+Shell.obj : error LNK2001: unresolved external symbol ___security_cookie
+FileFind.obj : error LNK2001: unresolved external symbol ___security_cookie
+FileIO.obj : error LNK2001: unresolved external symbol ___security_cookie
+FileName.obj : error LNK2001: unresolved external symbol ___security_cookie
+FileSystem.obj : error LNK2001: unresolved external symbol ___security_cookie
+CommonDialog.obj : error LNK2001: unresolved external symbol ___security_cookie
+DLL.obj : error LNK2001: unresolved external symbol ___security_cookie
+Error.obj : error LNK2001: unresolved external symbol ___security_cookie
+FileDir.obj : error LNK2001: unresolved external symbol ___security_cookie
+ComboBox.obj : error LNK2001: unresolved external symbol ___security_cookie
+Dialog.obj : error LNK2001: unresolved external symbol ___security_cookie
+optionPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+TreeView.obj : error LNK2001: unresolved external symbol ___security_cookie
+MyString.obj : error LNK2001: unresolved external symbol ___security_cookie
+StringConvert.obj : error LNK2001: unresolved external symbol ___security_cookie
+TextConfig.obj : error LNK2001: unresolved external symbol ___security_cookie
+Wildcard.obj : error LNK2001: unresolved external symbol ___security_cookie
+CommandLineParser.obj : error LNK2001: unresolved external symbol ___security_cookie
+IntToString.obj : error LNK2001: unresolved external symbol ___security_cookie
+Lang.obj : error LNK2001: unresolved external symbol ___security_cookie
+ListFileUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+ProgressUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+CopyCoder.obj : error LNK2001: unresolved external symbol ___security_cookie
+CpuArch.obj : error LNK2001: unresolved external symbol ___security_cookie
+Threads.obj : error LNK2001: unresolved external symbol ___security_cookie
+UpdateGUI.obj : error LNK2001: unresolved external symbol ___security_cookie
+CreateCoder.obj : error LNK2001: unresolved external symbol ___security_cookie
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol ___security_cookie
+FilterCoder.obj : error LNK2001: unresolved external symbol ___security_cookie
+StringUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+ExtractGUI.obj : error LNK2001: unresolved external symbol ___security_cookie
+GUI.obj : error LNK2001: unresolved external symbol ___security_cookie
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol ___security_cookie
+OpenCallback.obj : error LNK2001: unresolved external symbol ___security_cookie
+ProgramLocation.obj : error LNK2001: unresolved external symbol ___security_cookie
+RegistryUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+SplitUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+ExtractCallback.obj : error LNK2001: unresolved external symbol ___security_cookie
+FormatUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+HelpUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+LangUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol ___security_cookie
+OverwriteDialog.obj : error LNK2001: unresolved external symbol ___security_cookie
+PasswordDialog.obj : error LNK2001: unresolved external symbol ___security_cookie
+ProgressDialog2.obj : error LNK2001: unresolved external symbol ___security_cookie
+DeletePage.obj : error LNK2001: unresolved external symbol ___security_cookie
+GeneralPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+OptionsDlg.obj : error LNK2001: unresolved external symbol ___security_cookie
+SeniorPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+MyMessages.obj : error LNK2001: unresolved external symbol ___security_cookie
+AdvancedPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+CommentsPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+ConventionalPage.obj : error LNK2001: unresolved external symbol ___security_cookie
+UpdateCallback.obj : error LNK2001: unresolved external symbol ___security_cookie
+UpdatePair.obj : error LNK2001: unresolved external symbol ___security_cookie
+WorkDir.obj : error LNK2001: unresolved external symbol ___security_cookie
+ZipRegistry.obj : error LNK2001: unresolved external symbol ___security_cookie
+LoadCodecs.obj : error LNK2001: unresolved external symbol ___security_cookie
+PropIDUtils.obj : error LNK2001: unresolved external symbol ___security_cookie
+SetProperties.obj : error LNK2001: unresolved external symbol ___security_cookie
+Update.obj : error LNK2001: unresolved external symbol ___security_cookie
+DefaultName.obj : error LNK2001: unresolved external symbol ___security_cookie
+EnumDirItems.obj : error LNK2001: unresolved external symbol ___security_cookie
+Extract.obj : error LNK2001: unresolved external symbol ___security_cookie
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol ___security_cookie
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol ___security_cookie
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol ___security_cookie
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol ___security_cookie
+Bench.obj : error LNK2001: unresolved external symbol ___security_cookie
+HttpUpdat.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Shell.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Window.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+RootFolderTree.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+SysIconUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FileSystem.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+PropVariantConversions.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Registry.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ResourceString.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FileDir.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FileFind.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FileIO.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FileName.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+TreeView.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+CommonDialog.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+DLL.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Error.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Wildcard.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ComboBox.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Dialog.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+optionPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ListFileUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+MyString.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+StringConvert.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+TextConfig.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ProgressUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+CopyCoder.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+CommandLineParser.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Lang.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+UpdateGUI.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+CreateCoder.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FilterCoder.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+StringUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ExtractGUI.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+GUI.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+OpenCallback.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ProgramLocation.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+RegistryUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+SplitUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ExtractCallback.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+FormatUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+HelpUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+LangUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+OverwriteDialog.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+PasswordDialog.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ProgressDialog2.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+DeletePage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+GeneralPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+OptionsDlg.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+SeniorPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+MyMessages.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+AdvancedPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+CommentsPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ConventionalPage.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+UpdateCallback.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+UpdatePair.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+WorkDir.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ZipRegistry.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+LoadCodecs.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+PropIDUtils.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+SetProperties.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Update.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+DefaultName.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+EnumDirItems.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Extract.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+Bench.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+RootFolderTree.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+SysIconUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+HttpUpdat.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Window.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ExceptionHandler.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+GetWinVer.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+MiniVersion.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Registry.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ResourceString.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Shell.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Time.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FileIO.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FileName.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FileSystem.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+PropVariantConversions.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+DLL.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Error.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FileDir.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FileFind.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Dialog.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+optionPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+TreeView.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CommonDialog.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+StringConvert.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+TextConfig.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Wildcard.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ComboBox.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+IntToString.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Lang.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ListFileUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+MyString.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ProgressUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CopyCoder.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CpuArch.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CommandLineParser.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+UpdateGUI.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CreateCoder.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FilterCoder.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+StringUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ExtractGUI.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+GUI.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+OpenCallback.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ProgramLocation.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+RegistryUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+SplitUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ExtractCallback.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+FormatUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+HelpUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+LangUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+OverwriteDialog.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+PasswordDialog.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ProgressDialog2.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+DeletePage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+GeneralPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+OptionsDlg.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+SeniorPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+MyMessages.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+AdvancedPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+CommentsPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ConventionalPage.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+UpdateCallback.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+UpdatePair.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+WorkDir.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ZipRegistry.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+LoadCodecs.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+PropIDUtils.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+SetProperties.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Update.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+DefaultName.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+EnumDirItems.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Extract.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+Bench.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+MiniVersion.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+RootFolderTree.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+SysIconUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+HttpUpdat.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Time.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Window.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ExceptionHandler.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+GetWinVer.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Registry.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ResourceString.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Shell.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+System.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileName.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileSystem.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+MemoryLock.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+PropVariantConversions.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Error.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileDir.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileFind.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileIO.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+optionPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+TreeView.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CommonDialog.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+DLL.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Wildcard.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ComboBox.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Dialog.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ListView.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+MyString.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+StringConvert.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+TextConfig.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UTFConvert.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CommandLineParser.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+IntToString.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Lang.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ListFileUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+StreamUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CopyCoder.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CpuArch.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Threads.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FilePathAutoRename.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FileStreams.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FilterCoder.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ProgressUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+GUI.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UpdateCallbackGUI.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UpdateGUI.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CreateCoder.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+RegistryUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+SplitUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+StringUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ExtractGUI.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+HelpUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+LangUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+OpenCallback.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ProgramLocation.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+PasswordDialog.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ProgressDialog2.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ExtractCallback.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+FormatUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+OptionsDlg.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+SeniorPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+BenchmarkDialog.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+OverwriteDialog.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+CommentsPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ConventionalPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+DeletePage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+GeneralPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+WorkDir.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ZipRegistry.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+MyMessages.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+AdvancedPage.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Update.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UpdateCallback.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UpdatePair.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+UpdateProduce.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+LoadCodecs.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+PropIDUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+SetProperties.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+SortUtils.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+DefaultName.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+EnumDirItems.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Extract.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ExtractingFilePath.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ArchiveCommandLine.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ArchiveOpenCallback.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+Bench.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+ArchiveExtractCallback.obj : error LNK2001: unresolved external symbol "public: long __thiscall CArc::GetItemPath(unsigned int,class CStringBase<wchar_t> &)const " (?GetItemPath@CArc@@QBEJIAAV?$CStringBase@_W@@@Z)
+Extract.obj : error LNK2001: unresolved external symbol "public: long __thiscall CArc::GetItemPath(unsigned int,class CStringBase<wchar_t> &)const " (?GetItemPath@CArc@@QBEJIAAV?$CStringBase@_W@@@Z)
+Update.obj : error LNK2001: unresolved external symbol "public: long __thiscall CArc::GetItemPath(unsigned int,class CStringBase<wchar_t> &)const " (?GetItemPath@CArc@@QBEJIAAV?$CStringBase@_W@@@Z)
+Bench.obj : error LNK2001: unresolved external symbol __alloca_probe_16
+Extract.obj : error LNK2001: unresolved external symbol "public: long __thiscall CArchiveLink::Open2(class CCodecs *,class CRecordVector<int> const &,bool,struct IInStream *,class CStringBase<wchar_t> const &,struct IOpenCallbackUI *)" (?Open2@CArchiveLink@@QAEJPAVCCodecs@@ABV?$CRecordVector@H@@_NPAUIInStream@@ABV?$CStringBase@_W@@PAUIOpenCallbackUI@@@Z)
+Update.obj : error LNK2001: unresolved external symbol "public: long __thiscall CArchiveLink::Open2(class CCodecs *,class CRecordVector<int> const &,bool,struct IInStream *,class CStringBase<wchar_t> const &,struct IOpenCallbackUI *)" (?Open2@CArchiveLink@@QAEJPAVCCodecs@@ABV?$CRecordVector@H@@_NPAUIInStream@@ABV?$CStringBase@_W@@PAUIOpenCallbackUI@@@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "class CStringBase<unsigned short> __stdcall GetDefaultName2(class CStringBase<unsigned short> const &,class CStringBase<unsigned short> const &,class CStringBase<unsigned short> const &)" (?GetDefaultName2@@YG?AV?$CStringBase@G@@ABV1@00@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "public: int __thiscall CCodecs::FindFormatForArchiveType(class CStringBase<unsigned short> const &)const " (?FindFormatForArchiveType@CCodecs@@QBEHABV?$CStringBase@G@@@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "class CStringBase<unsigned short> __stdcall ExtractFileNameFromPath(class CStringBase<unsigned short> const &)" (?ExtractFileNameFromPath@@YG?AV?$CStringBase@G@@ABV1@@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "public: bool __thiscall CInFileStream::Open(unsigned short const *)" (?Open@CInFileStream@@QAE_NPBG@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "bool __stdcall NWindows::NFile::NDirectory::MyGetFullPathName(unsigned short const *,class CStringBase<unsigned short> &,int &)" (?MyGetFullPathName@NDirectory@NFile@NWindows@@YG_NPBGAAV?$CStringBase@G@@AAH@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "public: virtual long __stdcall COpenCallbackImp::CryptoGetTextPassword(unsigned short * *)" (?CryptoGetTextPassword@COpenCallbackImp@@UAGJPAPAG@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "public: virtual long __stdcall COpenCallbackImp::GetStream(unsigned short const *,struct IInStream * *)" (?GetStream@COpenCallbackImp@@UAGJPBGPAPAUIInStream@@@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "public: bool __thiscall NWindows::NFile::NFind::CFileInfoW::Find(unsigned short const *)" (?Find@CFileInfoW@NFind@NFile@NWindows@@QAE_NPBG@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "int __stdcall MyStringCompareNoCase(unsigned short const *,unsigned short const *)" (?MyStringCompareNoCase@@YGHPBG0@Z)
+OpenArchive.obj : error LNK2001: unresolved external symbol "int __stdcall MyStringCompare(unsigned short const *,unsigned short const *)" (?MyStringCompare@@YGHPBG0@Z)
+ConventionalPage.obj : error LNK2001: unresolved external symbol __RTC_UninitUse
+GeneralPage.obj : error LNK2001: unresolved external symbol __RTC_UninitUse
+GUI.obj : error LNK2001: unresolved external symbol __except_handler4
+Threads.obj : error LNK2001: unresolved external symbol __except_handler4
+ExceptionHandler.obj : error LNK2001: unresolved external symbol __except_handler4
+..\..\..\..\Debug\CoolRARGui.exe : fatal error LNK1120: 23 unresolved externals
+执行 link.exe 时出错.
+
+
+
+<h3>Results</h3>
+CoolRARGui.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

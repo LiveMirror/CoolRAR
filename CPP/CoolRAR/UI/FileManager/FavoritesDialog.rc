@@ -1,0 +1,23 @@
+#include "FavoritesDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 200
+#define yc 95
+
+IDD_DIALOG_FAVORITE MY_DIALOG
+CAPTION "添加到收藏夹中"
+BEGIN
+
+	GROUPBOX  "",                      IDC_FAVORITE_GROUP,m,0,200,90
+	LTEXT "把下列项目添加到收藏夹(&A)",IDC_FAVORITE_ADD_TEXT, m + 4,10,170,10
+	EDITTEXT,					       IDC_FAVORITE_ADD_EDIT,m + 4,21,185,12
+	LTEXT "压缩文件子文件夹(&F)",	   IDC_FAVORITE_PRESSFILE_TEXT,m + 4,36,170,10,WS_DISABLED
+	EDITTEXT,                          IDC_FAVORITE_PRESSFILE_EDIT,m + 4,46,185,12,WS_DISABLED
+	LTEXT "描述(&D)",                  IDC_FAVORITE_SAY_TEXT,m + 4,61,170,10
+	EDITTEXT,                        IDC_FAVORITE_SAY_EDIT,m + 4,71,185,12
+	DEFPUSHBUTTON "确定",              IDC_FAVORITE_BUTTON_OK,m + 20,95,50,12
+	PUSHBUTTON    "取消",             IDC_FAVORITE_BUTTON_CHANEL,m + 73,95,50,12
+	PUSHBUTTON    "帮助",              IDC_FAVORITE_BUTTON_HELP,m + 126,95,50,12
+ 
+END
+

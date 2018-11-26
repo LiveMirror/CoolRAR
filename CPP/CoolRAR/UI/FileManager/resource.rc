@@ -1,0 +1,321 @@
+#include "../../MyVersionInfo.rc"
+#include "../../GuiCommon.rc"
+#include "resource.h"
+
+MY_VERSION_INFO_APP("CoolRAR File Manager", "CoolRAR")
+
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+  "N",     IDM_CREATE_FILE,      VIRTKEY, CONTROL, NOINVERT
+  VK_F1,   IDM_HELP_CONTENTS,    VIRTKEY, NOINVERT
+  VK_F12,  IDM_FOLDERS_HISTORY,  VIRTKEY, ALT, NOINVERT
+  VK_F7,   IDM_CREATE_FOLDER,    VIRTKEY, NOINVERT
+END
+
+
+IDM_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+	 
+        MENUITEM "打开压缩文件(&O)\tCtrl+O",              IDM_FILE_OPEN
+		MENUITEM "保存压缩文件副本为(&V)...",             IDM_SAVEFILECOPY
+		POPUP "改变驱动器(&D)\tCtrl+D"                              
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "设置默认密码(&P)\tCtrl+P",              IDM_PASSWORDSET
+        MENUITEM SEPARATOR
+        MENUITEM "复制文件到剪贴板(&C)\tCtrl+C",            IDM_COPY
+        MENUITEM "从剪贴板粘贴文件(&T)\tCtrl+V",            IDM_COPYTO
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\(&A)\tCtrl+A",            IDM_SELECT_ALL
+        MENUITEM "选定一组(&S)\tNum +",                 IDM_SELECTROW
+        MENUITEM "撤选一组(&D)\tNum -",                 IDM_DESELECTROW
+        MENUITEM "&Invert Selection(&I)\tNum+*",        IDM_INVERT_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit(&X)\tAlt+F4",                   IDCLOSE
+		MENUITEM SEPARATOR
+		
+    END
+    POPUP "&Command"
+    BEGIN
+        MENUITEM "添加文件到压缩文件中(&O)\tAlt+A",           IDM_ADDFILE
+        MENUITEM "解压到指定文件夹(&E)\tAlt+E",               IDM_TOFLODER
+        MENUITEM "测试压缩的文件(&T)\tAlt+T",                 IDM_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "查看文件(&V)\tAlt+V",                 IDM_CHECKFILE
+        MENUITEM "删除文件(&D)\tDel",                   IDM_DELETEFILE
+        MENUITEM "重命名文件(&N)\tF2",                  IDM_SETFILENAME
+        MENUITEM "打印文件(&I)\tCtrl+I",                IDM_PRINTFILE
+        MENUITEM SEPARATOR
+        MENUITEM "无需确认直接解压缩(&W)\tAlt+W",           IDM_UNPRESSDIRECT
+        MENUITEM "添加压缩文件注释(&M)\tAlt+M",             IDM_ADDANNOTATION
+    END
+	POPUP "&Tools"
+    BEGIN
+        MENUITEM "向导(&Z)",                              IDM_GUIDE
+        MENUITEM SEPARATOR
+        MENUITEM "扫描压缩文件中的病毒(&S)\tAlt+D",       IDM_SEARCHVIRUS
+        MENUITEM "转换压缩格式(&C)\tAlt+Q",               IDM_FORMCHANGE
+        MENUITEM "修复压缩文件(&R)\tAlt+R",               IDM_REPAIRFILE
+        MENUITEM "压缩文件转换为自解压缩格式(&X)\tAlt+X", IDM_UNPRESSITSELF
+        MENUITEM SEPARATOR
+        MENUITEM "查找文件(&F)\tF3",                      IDM_SEARCHFILE
+        MENUITEM "显示信息(&I)\tAlt+I",                   IDM_GETINFORMATION
+		MENUITEM "分割文件(&L).."                         IDM_FILE_SPLIT                
+		MENUITEM "合并文件(&B).."						  IDM_FILE_COMBINE
+		MENUITEM SEPARATOR
+		MENUITEM "获取文件MD5信息"                        IDM_GETMD5INFO
+        MENUITEM "性能和硬件测试(&B)\tAlt+B",             IDM_HARDTEST
+    END
+   
+
+    POPUP "F&avorites"
+    BEGIN
+       		
+        MENUITEM "添加到收藏夹(&F)..   \tCtrl+F"          IDM_FAVORITESFLODER
+		MENUITEM "整理收藏夹(&O)..",                      IDM_ARRANGEFAVORITE
+        MENUITEM SEPARATOR
+    END
+	 POPUP "&View"
+	 BEGIN
+		
+        MENUITEM "设置(&S)\tCtrl+S",                  IDM_SETUP
+		POPUP "导入/导出(&I)"                              
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+		MENUITEM SEPARATOR
+		POPUP "文件夹列表(&F)"                              
+        BEGIN
+		    MENUITEM "不分层显示文件夹(&F)\tCtrl+H"   IDM_NOTCENT
+            MENUITEM SEPARATOR
+        END
+		POPUP "文件夹树(&T)"                              
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        POPUP "主题(&T)"                         
+		BEGIN
+			MENUITEM "管理主题(&O)..."           IDM_MANAGE_THEME
+			MENUITEM "获得更多主题(&G)..."		 IDM_ACHIEVE_THEME
+			MENUITEM SEPARATOR
+		END
+        MENUITEM SEPARATOR
+        MENUITEM "查看日志(&L)..\tCtrl+L",              IDM_CHECKDAILYA
+        MENUITEM "清除日志(&C)",                        IDM_DELETEDAILY
+        MENUITEM "Folders History...\tAlt+F12",         IDM_FOLDERS_HISTORY
+    END
+
+   
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents(&H)...\tF1",            IDM_HELP_CONTENTS
+		MENUITEM SEPARATOR
+		MENUITEM "意见反馈(&Y)",                    IDM_HELP_ADVANCE
+		MENUITEM "检查更新(&C)",                    IDM_HELP_CHECKUPDATE
+		MENUITEM "鸣谢网友(&M)",                    IDM_HELP_THANKS
+        MENUITEM SEPARATOR
+		MENUITEM "酷压官网(&K)",                    IDM_HELP_HOMEPAGE
+        MENUITEM "&About CoolRAR(&A)...",           IDM_ABOUT
+    END
+	
+END
+IDM_FILEMENU MENU 
+BEGIN
+	
+		MENUITEM "全部选定(&A)\tCtrl+A",                  IDM_SELECT_ALL
+		MENUITEM SEPARATOR
+		MENUITEM "添加文件到压缩文件中(&O)\tAlt+A",       IDM_ADDFILE
+		MENUITEM "解压到指定文件夹(&E)\tAlt+E",           IDM_TOFLODER
+        MENUITEM "测试压缩的文件(&T)\tAlt+T",             IDM_TEST
+		MENUITEM "查看文件(&V)\tAlt+V",                   IDM_CHECKFILE
+        MENUITEM "删除文件(&D)\tDel",                     IDM_DELETEFILE
+		MENUITEM "修复压缩文件(&R)\tAlt+R",               IDM_REPAIRFILE
+		MENUITEM "无需确认直接解压缩(&W)\tAlt+W",         IDM_UNPRESSDIRECT
+		MENUITEM "显示信息(&I)\tAlt+I",                   IDM_GETINFORMATION
+		MENUITEM SEPARATOR	
+		MENUITEM "设置默认密码(&P)\tCtrl+P",              IDM_PASSWORDSET	    
+		MENUITEM "添加到收藏夹(&F)..   \tCtrl+F"          IDM_FAVORITESFLODER
+		MENUITEM SEPARATOR
+		MENUITEM "创建一个新的文件夹(&N)",                IDM_CREATE_FOLDER
+		MENUITEM "重命名(&M)",                            IDM_SETFILENAME
+		POPUP "查看方式(&S)"                              
+			BEGIN 
+			MENUITEM SEPARATOR
+		    END
+		POPUP "排序方式(&B)"                              
+            BEGIN
+			MENUITEM SEPARATOR
+            END
+		POPUP "改变驱动器(&C)\tCtrl+D"                              
+            BEGIN
+			MENUITEM SEPARATOR
+            END
+	
+END
+
+IDI_ICON  ICON  "../../UI/FileManager/FM.ico"
+
+#ifndef UNDER_CE
+1  24  MOVEABLE PURE   "../../UI/FileManager/CoolRAR.exe.manifest"
+#endif
+
+IDB_ADD        BITMAP  "../../UI/FileManager/Add.bmp"
+IDB_EXTRACT    BITMAP  "../../UI/FileManager/Extract.bmp"
+IDB_TEST       BITMAP  "../../UI/FileManager/Test.bmp"
+IDB_CHECK      BITMAP  "../../UI/FileManager/Check.bmp"
+IDB_FIND       BITMAP  "../../UI/FileManager/Find.bmp"
+IDB_DELETE     BITMAP  "../../UI/FileManager/Delete.bmp"
+IDB_INFO       BITMAP  "../../UI/FileManager/Info.bmp"
+IDB_GUIDER     BITMAP  "../../UI/FileManager/xiangdao.bmp"
+IDB_GUIDER2    BITMAP  "../../UI/FileManager/xiangdaos.bmp"
+IDB_ADD2       BITMAP  "../../UI/FileManager/Adds.bmp"
+IDB_EXTRACT2   BITMAP  "../../UI/FileManager/Extracts.bmp"
+IDB_TEST2      BITMAP  "../../UI/FileManager/Tests.bmp"
+IDB_CHECK2     BITMAP  "../../UI/FileManager/Checks.bmp"
+IDB_FIND2      BITMAP  "../../UI/FileManager/Finds.bmp"
+IDB_DELETE2    BITMAP  "../../UI/FileManager/Deletes.bmp"
+IDB_INFO2      BITMAP  "../../UI/FileManager/Infos.bmp"
+IDB_REPAIRFAST BITMAP  "../../UI/FileManager/xiufu.bmp"
+IDB_REPAIR2    BITMAP  "../../UI/FileManager/xiufus.bmp"
+IDB_DIALOG_GUIDER_BITMAP  BITMAP  "../../UI/FileManager/xiangdao3.bmp"
+IDB_DIALOG_ABOUT_BITMAP   BITMAP  "../../UI/FileManager/ABOUTCoolRAR.bmp"
+IDB_ANNOTION   BITMAP  "../../UI/FileManager/zhushi.bmp"	
+
+STRINGTABLE
+BEGIN
+  IDS_APP_TITLE           "CoolRAR File Manager"
+  IDS_COPY                "Copy"
+  IDS_MOVE                "Move"
+  IDS_COPY_TO             "Copy to:"
+  IDS_MOVE_TO             "Move to:"
+  IDS_COPYING             "Copying..."
+  IDS_MOVING              "Moving..."
+  IDS_CANNOT_COPY         "You cannot move or copy items for such folders."
+  IDS_SPLITTING           "Splitting..."
+  IDS_SPLIT_CONFIRM_TITLE "Confirm Splitting"
+  IDS_SPLIT_CONFIRM_MESSAGE "Are you sure you want to split file into {0} volumes?"
+  IDS_SPLIT_VOL_MUST_BE_SMALLER "Volume size must be smaller than size of original file"
+
+  IDS_COMBINE             "Combine Files"
+  IDS_COMBINE_TO          "&Combine to:"
+  IDS_COMBINING           "Combining..."
+  IDS_COMBINE_SELECT_ONE_FILE "Select only first part of split file"
+  IDS_COMBINE_CANT_DETECT_SPLIT_FILE "Can not detect file as split file"
+  IDS_COMBINE_CANT_FIND_MORE_THAN_ONE_PART "Can not find more than one part of split file"
+
+  IDS_CHECKSUM_CALCULATING "Checksum calculating..."
+  IDS_CHECKSUM_INFORMATION "Checksum information"
+  IDS_CHECKSUM_CRC_DATA     "CRC checksum for data:"
+  IDS_CHECKSUM_CRC_DATA_NAMES "CRC checksum for data and names:"
+
+  IDS_SCANNING "Scanning..."
+
+  IDS_PROPERTIES "Properties"
+
+  IDS_OPERATION_IS_NOT_SUPPORTED "Operation is not supported."
+  
+  IDS_CONFIRM_FILE_DELETE "Confirm File Delete"
+  IDS_CONFIRM_FOLDER_DELETE "Confirm Folder Delete"
+  IDS_CONFIRM_ITEMS_DELETE "Confirm Multiple File Delete"
+  IDS_WANT_TO_DELETE_FILE "Are you sure you want to delete '{0}'?"
+  IDS_WANT_TO_DELETE_FOLDER "Are you sure you want to delete the folder '{0}' and all its contents?"
+  IDS_WANT_TO_DELETE_ITEMS  "Are you sure you want to delete these {0} items?"
+  IDS_DELETING            "Deleting..."
+  IDS_ERROR_DELETING      "Error Deleting File or Folder"
+  IDS_ERROR_LONG_PATH_TO_RECYCLE  "The system cannot move a file with long path to the Recycle Bin"
+  IDS_RENAMING            "Renaming..."
+  IDS_ERROR_RENAMING      "Error Renaming File or Folder"
+  IDS_CONFIRM_FILE_COPY   "Confirm File Copy"
+  IDS_WANT_TO_COPY_FILES  "Are you sure you want to copy files to archive"
+  
+  IDS_CREATE_FOLDER       "Create Folder"
+  IDS_CREATE_FOLDER_NAME  "Folder name:"
+  IDS_CREATE_FOLDER_DEFAULT_NAME "New Folder"
+  IDS_CREATE_FOLDER_ERROR "Error Creating Folder"
+  IDS_CREATE_FILE         "Create File"
+  IDS_CREATE_FILE_NAME    "File Name:"
+  IDS_CREATE_FILE_DEFAULT_NAME "New File"
+  IDS_CREATE_FILE_ERROR   "Error Creating File"
+  IDS_SELECT              "Select"
+  IDS_DESELECT            "Deselect"
+  IDS_SELECT_MASK         "Mask:"
+  IDS_FOLDERS_HISTORY     "Folders History"
+  IDS_N_SELECTED_ITEMS    "{0} object(s) selected"
+
+  IDS_PROP_TOTAL_SIZE     "Total Size"
+  IDS_PROP_FREE_SPACE     "Free Space"
+  IDS_PROP_CLUSTER_SIZE   "Cluster Size"
+  IDS_PROP_VOLUME_NAME    "Label"
+  IDS_PROP_LOCAL_NAME     "Local Name"
+  IDS_PROP_PROVIDER       "Provider"
+  IDS_OPTIONS             "Options"
+  IDS_COMMENT             "Comment"
+  IDS_COMMENT2            "&Comment:"
+  IDS_SYSTEM              "System"
+  IDS_TOO_MANY_ITEMS      "Too many items"
+  IDS_WANT_UPDATE_MODIFIED_FILE "File '{0}' was modified.\nDo you want to update it in the archive?"
+  IDS_CANNOT_UPDATE_FILE  "Can not update file\n'{0}'"
+  IDS_CANNOT_START_EDITOR "Cannot start editor."
+  IDS_OPENNING            "Opening..."
+  IDS_VIRUS               "The file looks like a virus (the file name contains long spaces in name)."
+  IDS_ADD                 "Add"
+  IDS_EXTRACT             "Extract"
+  IDS_TEST                "Test"
+  IDS_BUTTON_CHECK        "查看"
+  IDS_BUTTON_FIND         "查找"
+  IDS_BUTTON_DELETE       "Delete"
+  IDS_BUTTON_INFO         "Info"
+  IDS_BOOKMARK            "Bookmark"
+  IDS_COMPUTER            "Computer"
+  IDS_NETWORK             "Network"
+  IDS_DOCUMENTS           "Documents"
+
+  IDS_MESSAGE_UNSUPPORTED_OPERATION_FOR_LONG_PATH_FOLDER "The operation cannot be called from a folder that has a long path."
+  IDS_SELECT_ONE_FILE  "You must select one file"
+  IDS_SELECT_FILES  "You must select one or more files"
+  IDS_FILE_EXIST  "File {0} is already exist"
+END
+
+
+#include "AboutDialog.rc"
+#include "BrowseDialog.rc"
+#include "ComboDialog.rc"
+#include "CopyDialog.rc"
+#include "EditPage.rc"
+#include "FoldersPage.rc"
+#include "LangPage.rc"
+#include "ListViewDialog.rc"
+#include "MenuPage.rc"
+#include "MessagesDialog.rc"
+#include "OverwriteDialog.rc"
+#include "PasswordDialog.rc"
+#include "PluginsPage.rc"
+#include "ProgressDialog2.rc"
+#include "PropertyName.rc"
+#include "SettingsPage.rc"
+#include "SplitDialog.rc"
+#include "SystemPage.rc"
+#include "../GUI/Extract.rc"
+#include "../Explorer/resource2.rc"
+#include "resourceGui.rc"
+#include "PsWordDialog.rc"
+#include "GuideDialog.rc"
+#include "FindDialog.rc"
+#include "FindProcessDialog.rc"
+#include "FavoritesDialog.rc"
+#include "InforDialog.rc"
+#include "AnnotationDialog.rc"
+#include "SdDialog.rc"
+#include "FavClearUpDialog.rc"
+#include "ExtractDialog.rc"
+#include "DeletePage.rc"
+#include "FilePage.rc"
+#include "GeneralPage.rc"
+#include "TimePage.rc"
+#include "FMAdvancedPage.rc"
+#include "FMConventionalPage.rc"
+#include "ThemeDialog.rc"

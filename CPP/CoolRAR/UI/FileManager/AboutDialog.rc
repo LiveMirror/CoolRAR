@@ -1,0 +1,27 @@
+#include "AboutDialogRes.h"
+#include "../../GuiCommon.rc"
+#include "../../MyVersion.h"
+
+#define xc 285
+#define yc 80
+
+#define y 80
+
+IDI_LOGO ICON "../../UI/FileManager/CoolRARLogo.ico"
+
+#ifndef SS_REALSIZEIMAGE
+#define SS_REALSIZEIMAGE 0x800
+#endif
+
+IDD_ABOUT MY_DIALOG
+CAPTION "About CoolRAR"
+{
+  DEFPUSHBUTTON  "&OK", IDOK, 210, 8, bxs+15, bys-4
+  PUSHBUTTON  "主页&(H)", IDC_ABOUT_BUTTON_HOMEPAGE, 210, 25, bxs+15, bys-4
+  CONTROL   IDB_DIALOG_ABOUT_BITMAP,            IDC_BITMAP_STATIC_ABOUT,"Static",SS_BITMAP|SS_SUNKEN,m,m,180,25
+  ICON   IDI_LOGO,-1,m+4,m+35,32,32,SS_REALSIZEIMAGE
+  LTEXT  "CoolRAR 1.4.7", TEXT_BANBEN, m+50,m+40,80,10
+  LTEXT  "版权所有 (C) 2009-2010", TEXT_BANQUAN,m+50,m+50,100,10
+  LTEXT  "酷压软件工作室",TEXT_CoolRAR,m+50,m+62,100,10
+
+}

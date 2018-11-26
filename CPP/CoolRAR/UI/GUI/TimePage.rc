@@ -1,0 +1,19 @@
+#include "TimePageRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 240
+#define yc 150
+IDD_PAGE_TIME MY_PAGE
+CAPTION "时间"
+BEGIN
+       GROUPBOX  "存储文件时间"                  IDC_TIME_PAGE_GROUP_EDIT1, m, m, xc-m, 55
+       CONTROL  "高精确度修改时间(&M)",          IDC_TIME_PAGE_BOX_EDIT_ONE,MY_CHOOSEBOXONE, m+6, m+12,110,10
+       CONTROL  "存储创建时间(&C)",              IDC_TIME_PAGE_BOX_EDIT_TWO,MY_CHOOSEBOXONE, m+6, m+24,110,10
+       CONTROL  "存储最近访问时间(&A)",          IDC_TIME_PAGE_BOX_EDIT_THREE,MY_CHOOSEBOXONE, m+6, m+36,110,10
+       GROUPBOX  "文件处理"                    IDC_TIME_PAGE_GROUP_EDIT2, m, m+60, xc-m, 40
+       LTEXT            "包含时间(&F)",         IDC_TEXT1_STATIC_TIME, m+6, m+70, xc-40, 10
+       COMBOBOX                                  IDC_COMBO1_TIME, m+6, m+82, 100, bys,MY_COMBO_WITH_EDIT 
+       GROUPBOX  "压缩文件时间"                  IDC_TIME_PAGE_GROUP_EDIT3, m, m+106, xc-m, 40
+       LTEXT             "设置压缩文件时间为(&A)",       IDC_TEXT2_STATIC_TIME, m+6, m+118, xc-40, 10
+       COMBOBOX                                  IDC_COMBO2_TIME, m+6, m+130, 100, bys,MY_COMBO_WITH_EDIT 
+END

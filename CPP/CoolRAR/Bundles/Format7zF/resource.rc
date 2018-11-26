@@ -1,0 +1,14 @@
+#include "../../MyVersionInfo.rc"
+
+MY_VERSION_INFO_DLL("CoolRAR Standalone Plugin", "CoolRAR")
+
+
+0  ICON  "../../Archive/Icons/7z.ico"
+
+
+
+
+STRINGTABLE
+BEGIN
+100 "7z:0 zip:0 ace:0 arj:0 bz2:0 bzip2:0 tbz2:0 tbz:0 rar:0 arj:0 z:0 taz:0 lzh:0 lha:0 cab:0 iso:0 jar:0 jre:0 001:0 rpm:0 deb:0 cpio:0 tar:0 gz:0 gzip:0 tgz:0 tpz:0 split:0 swm:0 uue:0 wim:0 swm:0 lzma:0 dmg:0 hfs:0 xar:0 xpi:0 vhd:0 fat:0 ntfs:0 xz:0 isz:0 img:0 lzma86:0 split:0"
+END

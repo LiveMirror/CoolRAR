@@ -1,0 +1,24 @@
+#include "FavClearUpDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 267
+#define yc 146
+
+IDD_DIALOG_FAVCLEARUP MY_DIALOG
+CAPTION "整理收藏夹"
+BEGIN
+
+	CONTROL  "List1", IDC_FAVCLEARUP_LISTVIEW, "SysListView32", LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,
+            m, m, 216, 148
+	PUSHBUTTON "添加(&A)",        IDC_FAVCLEARUP_BUTTON_ADD,        m + 220,m     ,50 ,12
+	PUSHBUTTON "删除(&L)",        IDC_FAVCLEARUP_BUTTON_DELETE,     m + 220,m + 15,50 ,12      
+	PUSHBUTTON "编辑(&E)",        IDC_FAVCLEARUP_BUTTON_EDIT,       m + 220,m + 30,50 ,12
+	PUSHBUTTON "上移(&U)",        IDC_FAVCLEARUP_BUTTON_MOVEUP,     m + 220,m + 58,50 ,12
+	PUSHBUTTON "下移(&D)",        IDC_FAVCLEARUP_BUTTON_MOVEDOWN,   m + 220,m + 73,50 ,12 
+	DEFPUSHBUTTON "确定",         IDC_FAVCLEARUP_BUTTON_OK,         m + 220,m + 101,50 ,12 
+	PUSHBUTTON "取消",            IDC_FAVCLEARUP_BUTTON_CHANEL,     m + 220,m + 116,50 ,12 
+	PUSHBUTTON "帮助",            IDC_FAVCLEARUP_BUTTON_HELP,       m + 220,m + 132,50 ,12
+
+END
+
+

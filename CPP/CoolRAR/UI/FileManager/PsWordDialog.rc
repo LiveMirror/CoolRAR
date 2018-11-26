@@ -1,0 +1,20 @@
+#include "PsWordDialogRes.h"
+#include "../../GuiCommon.rc"
+
+#define xc 180
+#define yc 142
+
+IDD_DIALOG_PsWord  MY_DIALOG
+CAPTION "设置默认密码"
+BEGIN
+    LTEXT             "输入密码(&E)：",        IDC_TEXT1_STATIC_PsWord, m, m, xc, 8
+    LTEXT             "重新输入(&R)：",        IDC_TEXT2_STATIC_PsWord, m, m+28, xc, 8
+    DEFPUSHBUTTON     "确定",   IDC_BUTTON_ENSURE, bx1-115, by, bxs-4, bys-1 
+    DEFPUSHBUTTON     "取消",   ID_BUTTON_CANCEL,  bx1-55,  by, bxs-4, bys-1
+    DEFPUSHBUTTON     "帮助",   ID_BUTTON_HELP,    bx1+5,  by, bxs-4, bys-1
+	EDITTEXT  IDC_CIN_PsWord, m, m+10, xc-10, 14,  ES_PASSWORD
+	EDITTEXT  IDC_CIN_PSWORD_NORMAL, m, m+10, xc-10, 14,  
+    EDITTEXT  IDC_EDIT_PsWord, m, m+46, xc-10, 14, ES_PASSWORD | ES_AUTOHSCROLL
+	CONTROL  "显示密码(&S)", IDC_CHECK_PASSWORD_PsWord, MY_CHECKBOX, m, m+80, xc, 10
+	CONTROL  "加密文件名(&N)", IDC_CHECK_FILENAME_PsWord, MY_CHECKBOX, m,m+106, xc, 10
+END

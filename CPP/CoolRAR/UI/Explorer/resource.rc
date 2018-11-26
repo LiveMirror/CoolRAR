@@ -1,0 +1,163 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTEXT_EXTRACT     "解压文件..."
+    IDS_CONTEXT_EXTRACT_HELP "从选定的压缩文件中解压文件"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTEXT_COMPRESS    "添加到压缩文件..."
+    IDS_CONTEXT_COMPRESS_HELP "添加选定项目到压缩文件"
+    IDS_CONTEXT_OPEN        "打开压缩文件"
+    IDS_CONTEXT_OPEN_HELP   "打开选定的压缩文件"
+    IDS_CONTEXT_TEST        "测试压缩文件"
+    IDS_CONTEXT_TEST_HELP   "完整测试已选中的文件"
+    IDS_CONTEXT_CAPTION_HELP "CoolRAR 指令"
+    IDS_CONTEXT_POPUP_CAPTION "CoolRAR"
+    IDS_CONTEXT_EXTRACT_HERE "解压到当前目录"
+    IDS_CONTEXT_EXTRACT_HERE_HELP "从选定的压缩文件中解压文件到当前目录"
+    IDS_CONTEXT_EXTRACT_TO  "解压到 {0}"
+    IDS_CONTEXT_EXTRACT_TO_HELP "解压文件到子文件夹"
+	IDS_CONTEXT_MORE_EXTRACT_HERE "解压到当前目录"
+	IDS_CONTEXT_MORE_EXTRACT_HERE_HELP "从选定的压缩文件中解压文件到当前目录"
+	IDS_CONTEXT_MORE_EXTRACT_TO "解压到 {0}"
+	IDS_CONTEXT_MORE_EXTRACT_TO_HELP "解压文件到子文件夹"
+    IDS_CONTEXT_COMPRESS_TO "添加到 {0}"
+    IDS_CONTEXT_COMPRESS_TO_HELP "添加选定项目到压缩文件"
+    IDS_CONTEXT_COMPRESS_EMAIL "压缩并邮寄..."
+    IDS_CONTEXT_COMPRESS_EMAIL_HELP "将选定的项目添加到压缩文件并使用电子邮件发送。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTEXT_COMPRESS_TO_EMAIL "压缩 {0} 并邮寄"
+    IDS_CONTEXT_COMPRESS_TO_EMAIL_HELP "将选定的项目添加到压缩文件并使用电子邮件发送。"
+    IDS_CONTEXT_FOLDER      "<文件夹>"
+    IDS_CONTEXT_ARCHIVE     "<压缩文件名>"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,4,7,0
+ PRODUCTVERSION 1,4,7,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "CoolRAR"
+            VALUE "FileDescription", "CoolShell Extension"
+            VALUE "FileVersion", "1.4.7"
+            VALUE "InternalName", "CoolShell"
+            VALUE "LegalCopyright", "Copyright (c) 1999-2010 CoolRAR"
+            VALUE "OriginalFilename", "CoolShell.dll"
+            VALUE "ProductName", "CoolShell"
+            VALUE "ProductVersion", "1.4.7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "CoolShell.dll.manifest"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

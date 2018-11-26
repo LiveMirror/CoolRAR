@@ -1,0 +1,19 @@
+#include "BenchmarkDialog.rc"
+#include "resource2.h"
+
+#include "TimePage.rc"
+#include "DeletePage.rc"
+#include "CommentsPage.rc"
+#include "GeneralPage.rc"
+#include "SeniorPage.rc"
+#include "FilePage.rc"
+
+#include "AdvancedPage.rc"
+#include "ConventionalPage.rc"
+
+STRINGTABLE
+BEGIN
+    IDS_COMPRESSED_COLON    "Compressed size:"
+    IDS_ARCHIVES_COLON      "Archives:"
+    IDS_PROGRESS_COMPRESSING "Compressing"
+END

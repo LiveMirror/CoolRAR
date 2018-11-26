@@ -1,0 +1,837 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CoolRARDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29A.bat" with contents
+[
+@echo off
+ml.exe -c -omf -WX -W3 -Fo.\Debug\AesOpt.obj ..\..\..\..\Asm\x86\AesOpt.asm
+]
+Creating command line "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29A.bat"
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29B.bat" with contents
+[
+@echo off
+ml.exe -c -omf -Fo.\Debug\7zCrcOpt.obj ..\..\..\..\Asm\x86\7zCrcOpt.asm
+]
+Creating command line "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29B.bat"
+Creating command line "rc.exe /l 0x804 /fo"Debug/resource.res" /d "_DEBUG" "F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Bundles\Format7zF\resource.rc"" 
+Performing Custom Build Step on ..\..\..\..\Asm\x86\AesOpt.asm
+ Assembling: ..\..\..\..\Asm\x86\AesOpt.asm
+Microsoft (R) Macro Assembler Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Performing Custom Build Step on ..\..\..\..\Asm\x86\7zCrcOpt.asm
+ Assembling: ..\..\..\..\Asm\x86\7zCrcOpt.asm
+Microsoft (R) Macro Assembler Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29C.tmp" with contents
+[
+/nologo /Gr /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\SDK" /I "..\..\..\\" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MY7Z_EXPORTS" /D "NO_REGISTRY" /D "EXTERNAL_CODECS" /D "_7ZIP_LARGE_PAGES" /Fp"Debug/CoolRARDll.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\ArchiveExports.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\CodecExports.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\DllExports2.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\CRC.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\IntToString.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\MyMap.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\MyString.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\MyVector.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\MyXml.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\NewHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\StringConvert.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\StringToInt.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\UTFConvert.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Common\Wildcard.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\PpmdDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\PpmdEncoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\PpmdRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BitlDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Rar1Decoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Rar2Decoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Rar3Decoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Rar3Vm.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\RarCodecsRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BZip2Crc.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BZip2Decoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BZip2Encoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BZip2Register.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Deflate64Register.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\DeflateDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\DeflateEncoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\DeflateNsisRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\DeflateRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ImplodeDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ImplodeHuffmanDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\PpmdZip.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ShrinkDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ZlibDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ZlibEncoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Bcj2Coder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Bcj2Register.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BcjCoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BcjRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BranchCoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BranchMisc.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\BranchRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ByteSwap.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\CopyCoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\CopyRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Lzma2Decoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Lzma2Encoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Lzma2Register.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzmaDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzmaEncoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzmaRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\Lzx86Converter.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzxDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\QuantumDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ArjDecoder1.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ArjDecoder2.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\DeltaFilter.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzhDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\LzOutWindow.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Compress\ZDecoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\7zAes.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\7zAesRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\HmacSha1.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\MyAes.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\Pbkdf2HmacSha1.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\RandGen.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\Rar20Crypto.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\RarAes.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\Sha1.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\WzAes.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\ZipCrypto.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Crypto\ZipStrong.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\CreateCoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\CWrappers.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\FilterCoder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\InBuffer.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\InOutTempBuffer.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\LimitedStreams.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\LockedStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\MemBlocks.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\MethodId.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\MethodProps.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\OffsetStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\OutBuffer.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\OutMemStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\ProgressMt.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\ProgressUtils.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\StreamBinder.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\StreamObjects.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\StreamUtils.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Common\VirtThread.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zCompressionMode.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zDecode.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zEncode.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zExtract.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zFolderInStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zFolderOutStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zHandlerOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zProperties.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zSpecStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarItem.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Rar\RarVolumeInStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Cab\CabBlockInStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Cab\CabHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Cab\CabHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Cab\CabIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Cab\CabRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Chm\ChmHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Chm\ChmHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Chm\ChmIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Chm\ChmRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\CoderMixer2.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\CoderMixer2MT.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\DummyOutStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\FindSignature.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\HandlerOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\InStreamWithCRC.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\ItemNameUtils.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\MultiStream.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\OutStreamWithCRC.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\OutStreamWithSha1.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Common\ParseProperties.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Iso\IsoHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Iso\IsoHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Iso\IsoIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Iso\IsoRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Nsis\NsisDecode.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Nsis\NsisHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Nsis\NsisIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Nsis\NsisRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarHandlerOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Tar\TarUpdate.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipAddCommon.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipHandlerOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipHeader.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipItem.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipOut.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Wim\WimHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Wim\WimIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Wim\WimRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Com\ComHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Com\ComIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Com\ComRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Hfs\HfsHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Hfs\HfsIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Hfs\HfsRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Udf\UdfHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Udf\UdfIn.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Udf\UdfRegister.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\ApmHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\ArjHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Bz2Handler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\CpioHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\DebHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\DeflateProps.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\DmgHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\ElfHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\FatHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\FlvHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\GzHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\LzhHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\LzmaHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\MachoHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\MbrHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\MslzHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\MubHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\NtfsHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\PeHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\PpmdHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\RpmHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\SplitHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\SwfHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\VhdHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\XarHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\XzHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\ZHandler.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\FileDir.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\FileFind.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\FileIO.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\PropVariant.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\PropVariantUtils.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\Synchronization.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\System.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\Windows\Time.cpp"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Wim\WimHandlerOut.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29C.tmp" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29D.tmp" with contents
+[
+/nologo /Gr /MDd /W4 /WX /Gm /GX /ZI /Od /I "..\..\..\..\SDK" /I "..\..\..\\" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MY7Z_EXPORTS" /D "NO_REGISTRY" /D "EXTERNAL_CODECS" /D "_7ZIP_LARGE_PAGES" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Xz.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\XzCrc64.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\XzDec.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\XzIn.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29D.tmp" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29E.tmp" with contents
+[
+/nologo /Gr /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\SDK" /I "..\..\..\\" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MY7Z_EXPORTS" /D "NO_REGISTRY" /D "EXTERNAL_CODECS" /D "_7ZIP_LARGE_PAGES" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\XzEnc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\7zBuf2.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\7zCrc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\7zStream.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Aes.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Alloc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Bra.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Bra86.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\BraIA64.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\BwtSort.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\CpuArch.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Delta.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\HuffEnc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\LzFind.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\LzFindMt.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Lzma2Dec.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Lzma2Enc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\LzmaDec.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\LzmaEnc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\MtCoder.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd7.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd7Dec.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd7Enc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd8.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd8Dec.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Ppmd8Enc.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Sha256.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Sort.c"
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\C\Threads.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29E.tmp" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29F.tmp" with contents
+[
+/nologo /Gr /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\SDK" /I "..\..\..\\" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MY7Z_EXPORTS" /D "NO_REGISTRY" /D "EXTERNAL_CODECS" /D "_7ZIP_LARGE_PAGES" /Fp"Debug/CoolRARDll.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Bundles\Format7zF\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP29F.tmp" 
+Creating temporary file "C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP2A0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/CoolRAR.pdb" /debug /machine:I386 /def:"..\..\Archive\Archive2.def" /out:"..\..\..\..\Debug\CoolRAR.dll" /implib:"Debug/CoolRAR.lib" /pdbtype:sept 
+".\Debug\ArchiveExports.obj"
+".\Debug\CodecExports.obj"
+".\Debug\DllExports2.obj"
+".\Debug\StdAfx.obj"
+".\Debug\CRC.obj"
+".\Debug\IntToString.obj"
+".\Debug\MyMap.obj"
+".\Debug\MyString.obj"
+".\Debug\MyVector.obj"
+".\Debug\MyXml.obj"
+".\Debug\NewHandler.obj"
+".\Debug\StringConvert.obj"
+".\Debug\StringToInt.obj"
+".\Debug\UTFConvert.obj"
+".\Debug\Wildcard.obj"
+".\Debug\PpmdDecoder.obj"
+".\Debug\PpmdEncoder.obj"
+".\Debug\PpmdRegister.obj"
+".\Debug\BitlDecoder.obj"
+".\Debug\Rar1Decoder.obj"
+".\Debug\Rar2Decoder.obj"
+".\Debug\Rar3Decoder.obj"
+".\Debug\Rar3Vm.obj"
+".\Debug\RarCodecsRegister.obj"
+".\Debug\BZip2Crc.obj"
+".\Debug\BZip2Decoder.obj"
+".\Debug\BZip2Encoder.obj"
+".\Debug\BZip2Register.obj"
+".\Debug\Deflate64Register.obj"
+".\Debug\DeflateDecoder.obj"
+".\Debug\DeflateEncoder.obj"
+".\Debug\DeflateNsisRegister.obj"
+".\Debug\DeflateRegister.obj"
+".\Debug\ImplodeDecoder.obj"
+".\Debug\ImplodeHuffmanDecoder.obj"
+".\Debug\PpmdZip.obj"
+".\Debug\ShrinkDecoder.obj"
+".\Debug\ZlibDecoder.obj"
+".\Debug\ZlibEncoder.obj"
+".\Debug\Bcj2Coder.obj"
+".\Debug\Bcj2Register.obj"
+".\Debug\BcjCoder.obj"
+".\Debug\BcjRegister.obj"
+".\Debug\BranchCoder.obj"
+".\Debug\BranchMisc.obj"
+".\Debug\BranchRegister.obj"
+".\Debug\ByteSwap.obj"
+".\Debug\CopyCoder.obj"
+".\Debug\CopyRegister.obj"
+".\Debug\Lzma2Decoder.obj"
+".\Debug\Lzma2Encoder.obj"
+".\Debug\Lzma2Register.obj"
+".\Debug\LzmaDecoder.obj"
+".\Debug\LzmaEncoder.obj"
+".\Debug\LzmaRegister.obj"
+".\Debug\Lzx86Converter.obj"
+".\Debug\LzxDecoder.obj"
+".\Debug\QuantumDecoder.obj"
+".\Debug\ArjDecoder1.obj"
+".\Debug\ArjDecoder2.obj"
+".\Debug\DeltaFilter.obj"
+".\Debug\LzhDecoder.obj"
+".\Debug\LzOutWindow.obj"
+".\Debug\ZDecoder.obj"
+".\Debug\7zAes.obj"
+".\Debug\7zAesRegister.obj"
+".\Debug\HmacSha1.obj"
+".\Debug\MyAes.obj"
+".\Debug\Pbkdf2HmacSha1.obj"
+".\Debug\RandGen.obj"
+".\Debug\Rar20Crypto.obj"
+".\Debug\RarAes.obj"
+".\Debug\Sha1.obj"
+".\Debug\WzAes.obj"
+".\Debug\ZipCrypto.obj"
+".\Debug\ZipStrong.obj"
+".\Debug\CreateCoder.obj"
+".\Debug\CWrappers.obj"
+".\Debug\FilterCoder.obj"
+".\Debug\InBuffer.obj"
+".\Debug\InOutTempBuffer.obj"
+".\Debug\LimitedStreams.obj"
+".\Debug\LockedStream.obj"
+".\Debug\MemBlocks.obj"
+".\Debug\MethodId.obj"
+".\Debug\MethodProps.obj"
+".\Debug\OffsetStream.obj"
+".\Debug\OutBuffer.obj"
+".\Debug\OutMemStream.obj"
+".\Debug\ProgressMt.obj"
+".\Debug\ProgressUtils.obj"
+".\Debug\StreamBinder.obj"
+".\Debug\StreamObjects.obj"
+".\Debug\StreamUtils.obj"
+".\Debug\VirtThread.obj"
+".\Debug\Xz.obj"
+".\Debug\XzCrc64.obj"
+".\Debug\XzDec.obj"
+".\Debug\XzEnc.obj"
+".\Debug\XzIn.obj"
+".\Debug\7zBuf2.obj"
+".\Debug\7zCrc.obj"
+".\Debug\7zStream.obj"
+".\Debug\Aes.obj"
+".\Debug\Alloc.obj"
+".\Debug\Bra.obj"
+".\Debug\Bra86.obj"
+".\Debug\BraIA64.obj"
+".\Debug\BwtSort.obj"
+".\Debug\CpuArch.obj"
+".\Debug\Delta.obj"
+".\Debug\HuffEnc.obj"
+".\Debug\LzFind.obj"
+".\Debug\LzFindMt.obj"
+".\Debug\Lzma2Dec.obj"
+".\Debug\Lzma2Enc.obj"
+".\Debug\LzmaDec.obj"
+".\Debug\LzmaEnc.obj"
+".\Debug\MtCoder.obj"
+".\Debug\Ppmd7.obj"
+".\Debug\Ppmd7Dec.obj"
+".\Debug\Ppmd7Enc.obj"
+".\Debug\Ppmd8.obj"
+".\Debug\Ppmd8Dec.obj"
+".\Debug\Ppmd8Enc.obj"
+".\Debug\Sha256.obj"
+".\Debug\Sort.obj"
+".\Debug\Threads.obj"
+".\Debug\7zCompressionMode.obj"
+".\Debug\7zDecode.obj"
+".\Debug\7zEncode.obj"
+".\Debug\7zExtract.obj"
+".\Debug\7zFolderInStream.obj"
+".\Debug\7zFolderOutStream.obj"
+".\Debug\7zHandler.obj"
+".\Debug\7zHandlerOut.obj"
+".\Debug\7zHeader.obj"
+".\Debug\7zIn.obj"
+".\Debug\7zOut.obj"
+".\Debug\7zProperties.obj"
+".\Debug\7zRegister.obj"
+".\Debug\7zSpecStream.obj"
+".\Debug\7zUpdate.obj"
+".\Debug\RarHandler.obj"
+".\Debug\RarHeader.obj"
+".\Debug\RarIn.obj"
+".\Debug\RarItem.obj"
+".\Debug\RarRegister.obj"
+".\Debug\RarVolumeInStream.obj"
+".\Debug\CabBlockInStream.obj"
+".\Debug\CabHandler.obj"
+".\Debug\CabHeader.obj"
+".\Debug\CabIn.obj"
+".\Debug\CabRegister.obj"
+".\Debug\ChmHandler.obj"
+".\Debug\ChmHeader.obj"
+".\Debug\ChmIn.obj"
+".\Debug\ChmRegister.obj"
+".\Debug\CoderMixer2.obj"
+".\Debug\CoderMixer2MT.obj"
+".\Debug\DummyOutStream.obj"
+".\Debug\FindSignature.obj"
+".\Debug\HandlerOut.obj"
+".\Debug\InStreamWithCRC.obj"
+".\Debug\ItemNameUtils.obj"
+".\Debug\MultiStream.obj"
+".\Debug\OutStreamWithCRC.obj"
+".\Debug\OutStreamWithSha1.obj"
+".\Debug\ParseProperties.obj"
+".\Debug\IsoHandler.obj"
+".\Debug\IsoHeader.obj"
+".\Debug\IsoIn.obj"
+".\Debug\IsoRegister.obj"
+".\Debug\NsisDecode.obj"
+".\Debug\NsisHandler.obj"
+".\Debug\NsisIn.obj"
+".\Debug\NsisRegister.obj"
+".\Debug\TarHandler.obj"
+".\Debug\TarHandlerOut.obj"
+".\Debug\TarHeader.obj"
+".\Debug\TarIn.obj"
+".\Debug\TarOut.obj"
+".\Debug\TarRegister.obj"
+".\Debug\TarUpdate.obj"
+".\Debug\ZipAddCommon.obj"
+".\Debug\ZipHandler.obj"
+".\Debug\ZipHandlerOut.obj"
+".\Debug\ZipHeader.obj"
+".\Debug\ZipIn.obj"
+".\Debug\ZipItem.obj"
+".\Debug\ZipOut.obj"
+".\Debug\ZipRegister.obj"
+".\Debug\ZipUpdate.obj"
+".\Debug\WimHandler.obj"
+".\Debug\WimIn.obj"
+".\Debug\WimRegister.obj"
+".\Debug\ComHandler.obj"
+".\Debug\ComIn.obj"
+".\Debug\ComRegister.obj"
+".\Debug\HfsHandler.obj"
+".\Debug\HfsIn.obj"
+".\Debug\HfsRegister.obj"
+".\Debug\UdfHandler.obj"
+".\Debug\UdfIn.obj"
+".\Debug\UdfRegister.obj"
+".\Debug\ApmHandler.obj"
+".\Debug\ArjHandler.obj"
+".\Debug\Bz2Handler.obj"
+".\Debug\CpioHandler.obj"
+".\Debug\DebHandler.obj"
+".\Debug\DeflateProps.obj"
+".\Debug\DmgHandler.obj"
+".\Debug\ElfHandler.obj"
+".\Debug\FatHandler.obj"
+".\Debug\FlvHandler.obj"
+".\Debug\GzHandler.obj"
+".\Debug\LzhHandler.obj"
+".\Debug\LzmaHandler.obj"
+".\Debug\MachoHandler.obj"
+".\Debug\MbrHandler.obj"
+".\Debug\MslzHandler.obj"
+".\Debug\MubHandler.obj"
+".\Debug\NtfsHandler.obj"
+".\Debug\PeHandler.obj"
+".\Debug\PpmdHandler.obj"
+".\Debug\RpmHandler.obj"
+".\Debug\SplitHandler.obj"
+".\Debug\SwfHandler.obj"
+".\Debug\VhdHandler.obj"
+".\Debug\XarHandler.obj"
+".\Debug\XzHandler.obj"
+".\Debug\ZHandler.obj"
+".\Debug\FileDir.obj"
+".\Debug\FileFind.obj"
+".\Debug\FileIO.obj"
+".\Debug\PropVariant.obj"
+".\Debug\PropVariantUtils.obj"
+".\Debug\Synchronization.obj"
+".\Debug\System.obj"
+".\Debug\Time.obj"
+".\Debug\resource.res"
+".\Debug\7zCrcOpt.obj"
+".\Debug\AesOpt.obj"
+".\Debug\WimHandlerOut.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\NCUJIA~1\LOCALS~1\Temp\RSP2A0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ArchiveExports.cpp
+CodecExports.cpp
+DllExports2.cpp
+CRC.cpp
+IntToString.cpp
+MyMap.cpp
+MyString.cpp
+MyVector.cpp
+MyXml.cpp
+NewHandler.cpp
+StringConvert.cpp
+StringToInt.cpp
+UTFConvert.cpp
+Wildcard.cpp
+PpmdDecoder.cpp
+PpmdEncoder.cpp
+PpmdRegister.cpp
+BitlDecoder.cpp
+Rar1Decoder.cpp
+Rar2Decoder.cpp
+Generating Code...
+Compiling...
+Rar3Decoder.cpp
+Rar3Vm.cpp
+RarCodecsRegister.cpp
+BZip2Crc.cpp
+BZip2Decoder.cpp
+BZip2Encoder.cpp
+BZip2Register.cpp
+Deflate64Register.cpp
+DeflateDecoder.cpp
+DeflateEncoder.cpp
+DeflateNsisRegister.cpp
+DeflateRegister.cpp
+ImplodeDecoder.cpp
+ImplodeHuffmanDecoder.cpp
+PpmdZip.cpp
+ShrinkDecoder.cpp
+ZlibDecoder.cpp
+ZlibEncoder.cpp
+Bcj2Coder.cpp
+Bcj2Register.cpp
+Generating Code...
+Compiling...
+BcjCoder.cpp
+BcjRegister.cpp
+BranchCoder.cpp
+BranchMisc.cpp
+BranchRegister.cpp
+ByteSwap.cpp
+CopyCoder.cpp
+CopyRegister.cpp
+Lzma2Decoder.cpp
+Lzma2Encoder.cpp
+Lzma2Register.cpp
+LzmaDecoder.cpp
+LzmaEncoder.cpp
+LzmaRegister.cpp
+Lzx86Converter.cpp
+LzxDecoder.cpp
+QuantumDecoder.cpp
+ArjDecoder1.cpp
+ArjDecoder2.cpp
+DeltaFilter.cpp
+Generating Code...
+Compiling...
+LzhDecoder.cpp
+LzOutWindow.cpp
+ZDecoder.cpp
+7zAes.cpp
+7zAesRegister.cpp
+HmacSha1.cpp
+MyAes.cpp
+Pbkdf2HmacSha1.cpp
+RandGen.cpp
+Rar20Crypto.cpp
+RarAes.cpp
+Sha1.cpp
+WzAes.cpp
+ZipCrypto.cpp
+ZipStrong.cpp
+CreateCoder.cpp
+CWrappers.cpp
+FilterCoder.cpp
+InBuffer.cpp
+InOutTempBuffer.cpp
+Generating Code...
+Compiling...
+LimitedStreams.cpp
+LockedStream.cpp
+MemBlocks.cpp
+MethodId.cpp
+MethodProps.cpp
+OffsetStream.cpp
+OutBuffer.cpp
+OutMemStream.cpp
+ProgressMt.cpp
+ProgressUtils.cpp
+StreamBinder.cpp
+StreamObjects.cpp
+StreamUtils.cpp
+VirtThread.cpp
+7zCompressionMode.cpp
+7zDecode.cpp
+7zEncode.cpp
+7zExtract.cpp
+7zFolderInStream.cpp
+7zFolderOutStream.cpp
+Generating Code...
+Compiling...
+7zHandler.cpp
+7zHandlerOut.cpp
+7zHeader.cpp
+7zIn.cpp
+7zOut.cpp
+7zProperties.cpp
+7zRegister.cpp
+7zSpecStream.cpp
+7zUpdate.cpp
+RarHandler.cpp
+RarHeader.cpp
+RarIn.cpp
+RarItem.cpp
+RarRegister.cpp
+RarVolumeInStream.cpp
+CabBlockInStream.cpp
+CabHandler.cpp
+CabHeader.cpp
+CabIn.cpp
+CabRegister.cpp
+Generating Code...
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__ehhandler$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$28' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$27' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$26' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$25' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$24' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$23' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$22' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$21' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$20' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$19' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$18' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$17' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$16' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$15' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$14' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$13' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$12' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$11' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$10' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$9' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$8' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$7' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$6' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$5' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$4' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$3' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$2' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$1' : identifier was truncated to '255' characters in the debug information
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\7z\7zUpdate.cpp(1175) : warning C4786: '__unwindfunclet$?Update@N7z@NArchive@@YIJPAUICompressCodecsInfo@@PBV?$CObjectVector@UCCodecInfoEx@@@@PAUIInStream@@PBUCArchiveDatabaseEx@12@ABV?$CObjectVector@UCUpdateItem@N7z@NArchive@@@@AAVCOutArchive@12@AAUCArchiveDatabase@12@PAUISequentialOutStream@@PAUIArchiveUpdateCallback@@ABUCUpdateOptions@12@PAUICryptoGetTextPassword@@@Z$0' : identifier was truncated to '255' characters in the debug information
+Compiling...
+ChmHandler.cpp
+ChmHeader.cpp
+ChmIn.cpp
+ChmRegister.cpp
+CoderMixer2.cpp
+CoderMixer2MT.cpp
+DummyOutStream.cpp
+FindSignature.cpp
+HandlerOut.cpp
+InStreamWithCRC.cpp
+ItemNameUtils.cpp
+MultiStream.cpp
+OutStreamWithCRC.cpp
+OutStreamWithSha1.cpp
+ParseProperties.cpp
+IsoHandler.cpp
+IsoHeader.cpp
+IsoIn.cpp
+IsoRegister.cpp
+NsisDecode.cpp
+Generating Code...
+Compiling...
+NsisHandler.cpp
+NsisIn.cpp
+NsisRegister.cpp
+TarHandler.cpp
+TarHandlerOut.cpp
+TarHeader.cpp
+TarIn.cpp
+TarOut.cpp
+TarRegister.cpp
+TarUpdate.cpp
+ZipAddCommon.cpp
+ZipHandler.cpp
+ZipHandlerOut.cpp
+ZipHeader.cpp
+ZipIn.cpp
+ZipItem.cpp
+ZipOut.cpp
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipOut.cpp(272) : error C2259: 'COffsetOutStream' : cannot instantiate abstract class due to following members:
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\common\offsetstream.h(9) : see declaration of 'COffsetOutStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipOut.cpp(272) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipOut.cpp(272) : error C2259: 'COffsetOutStream' : cannot instantiate abstract class due to following members:
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\common\offsetstream.h(9) : see declaration of 'COffsetOutStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipOut.cpp(272) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+ZipRegister.cpp
+ZipUpdate.cpp
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(624) : error C2259: 'COutMemStream' : cannot instantiate abstract class due to following members:
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\common\outmemstream.h(9) : see declaration of 'COutMemStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(624) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(624) : error C2259: 'COutMemStream' : cannot instantiate abstract class due to following members:
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\common\outmemstream.h(9) : see declaration of 'COutMemStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(624) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(1029) : error C2259: 'CCacheOutStream' : cannot instantiate abstract class due to following members:
+        F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(808) : see declaration of 'CCacheOutStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(1029) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(1029) : error C2259: 'CCacheOutStream' : cannot instantiate abstract class due to following members:
+        F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(808) : see declaration of 'CCacheOutStream'
+F:\酷压备份 CoolRAR1.4.3.27\CoolRAR\CPP\CoolRAR\Archive\Zip\ZipUpdate.cpp(1029) : warning C4259: 'long __stdcall IOutStream::SetSize(__int64)' : pure virtual function was not defined
+        f:\酷压备份 coolrar1.4.3.27\coolrar\cpp\coolrar\istream.h(46) : see declaration of 'SetSize'
+WimHandler.cpp
+Generating Code...
+Compiling...
+WimIn.cpp
+WimRegister.cpp
+ComHandler.cpp
+ComIn.cpp
+ComRegister.cpp
+HfsHandler.cpp
+HfsIn.cpp
+HfsRegister.cpp
+UdfHandler.cpp
+UdfIn.cpp
+UdfRegister.cpp
+ApmHandler.cpp
+ArjHandler.cpp
+Bz2Handler.cpp
+CpioHandler.cpp
+DebHandler.cpp
+DeflateProps.cpp
+DmgHandler.cpp
+ElfHandler.cpp
+FatHandler.cpp
+Generating Code...
+Compiling...
+FlvHandler.cpp
+GzHandler.cpp
+LzhHandler.cpp
+LzmaHandler.cpp
+MachoHandler.cpp
+MbrHandler.cpp
+MslzHandler.cpp
+MubHandler.cpp
+NtfsHandler.cpp
+PeHandler.cpp
+PpmdHandler.cpp
+RpmHandler.cpp
+SplitHandler.cpp
+SwfHandler.cpp
+VhdHandler.cpp
+XarHandler.cpp
+XzHandler.cpp
+ZHandler.cpp
+FileDir.cpp
+FileFind.cpp
+Generating Code...
+Compiling...
+FileIO.cpp
+PropVariant.cpp
+PropVariantUtils.cpp
+Synchronization.cpp
+System.cpp
+Time.cpp
+WimHandlerOut.cpp
+Generating Code...
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+CoolRAR.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

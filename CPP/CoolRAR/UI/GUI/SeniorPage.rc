@@ -1,0 +1,27 @@
+#include "SeniorPageRes.h"
+#include "../../GuiCommon.rc"
+#define xc 240
+#define yc 150
+IDD_PAGE_SENIOR MY_PAGE
+CAPTION "密码"
+BEGIN
+	GROUPBOX "带密码压缩(不支持TAR格式)",     IDC_SEN_PAGE_GROUP_EDIT,m + 2,m + 5,xc-4, yc-10
+
+ 	LTEXT     "输入密码(&I)", IDC_SEN_PAGE_TEXT_ONE, m+22, m+20, 100, 8
+
+	EDITTEXT            IDC_SEN_PAGE_EDITTEXT_ONE,  m+22, m + 35, 180, 13
+
+	LTEXT     "再次输入密码(&A)", IDC_SEN_PAGE_TEXT_TWO, m+22, m+55, 100, 8
+
+	EDITTEXT            IDC_SEN_PAGE_EDITTEXT_TWO,  m+22, m + 70, 180, 13
+
+	CONTROL  "显示密码(&S)",   IDC_SEN_PAGE_BOX_EDIT_ONE,MY_CHECKBOX,m+22, m+90,100,10
+
+	LTEXT     "加密算法", IDC_SEN_PAGE_TEXT_THREE, m+22, m+110, 100, 8
+	COMBOBOX			   IDC_SEN_PAGE_COMBO_ONE,m+135, m+109,65, 10, MY_COMBO_WITH_EDIT
+
+	CONTROL  "加密文件名(&E)   ( 仅限7Z格式 )",   IDC_SEN_PAGE_BOX_EDIT_TWO,MY_CHECKBOX,m +22, m+130,160,10
+
+
+	
+END
